@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #f8f4f1;
+  color: #333;
+}
+header, footer {
+  background: #eae1d6;
+  padding: 1rem 2rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #5b4a3b;
+  font-weight: bold;
+}
+.hero {
+  background: url('https://example.com/banner.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+.hero button {
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+  background: #8c6e56;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.stats {
+  text-align: center;
+  margin-top: 1rem;
+}
+.news, .ratings {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+}
+.card {
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 300px;
+  border-radius: 8px;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-nav div {
+  margin-top: 1rem;
+}

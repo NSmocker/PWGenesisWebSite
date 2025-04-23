@@ -1,18 +1,42 @@
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none; /* Вимикає взаємодію з мишею */
+}
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background: #f8f4f1;
-  color: #333;
+  background: #2B2B2B; /* Чорне залізо */
+  color: #E5A24A; /* Бурштин */
 }
-header, footer {
-  background: #eae1d6;
-  padding: 1rem 2rem;
+
+header {
+  background: url('img/header.png') repeat-x center center; /* Зображення рваного паперу */
+  background-size: auto 100%;
+
+  padding: 2rem 2rem;
+  color: #F6C177; /* Світлий золотисто-бурштиновий */
+  text-align: center;
 }
+
+footer {
+  background: url('img/Footer.jpg') repeat-x center center; /* Додаємо зображення як фон */
+  background-size: auto 100%; /* Зображення покриває весь футер */
+ 
+  height: 150px; /* Висота футера */
+  color: #E5A24A; /* Бурштин */
+  text-align: center;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 nav ul {
   list-style: none;
   display: flex;
@@ -20,58 +44,109 @@ nav ul {
   padding: 0;
   margin: 0;
 }
+
 nav a {
   text-decoration: none;
-  color: #5b4a3b;
+  color: #D4AF37; /* Золото */
   font-weight: bold;
 }
+
+nav a, nav button {
+  text-decoration: none;
+  color: #D4AF37; /* Золото */
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover, nav button:hover {
+  color: #F6C177; /* Світлий золотисто-бурштиновий */
+  text-shadow: 0 0 8px #F6C177, 0 0 15px #F6C177; /* Ефект свічіння */
+}
+
 .hero {
-  background: url('https://example.com/banner.jpg') no-repeat center center;
+  background: url('img/TellusCity.jpg') no-repeat center center;
   background-size: cover;
-  color: white;
+  color: #130f0a; /* Світлий золотисто-бурштиновий */
   text-align: center;
   padding: 4rem 2rem;
 }
+
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
+  color: #D4AF37; /* Золото */
 }
+
 .hero p {
   font-size: 1.2rem;
+  color: #B3A580; /* Потертий пісочний камінь */
 }
+
 .hero button {
   margin-top: 1rem;
   padding: 0.7rem 2rem;
-  background: #8c6e56;
+  background: #010c04; /* Чаклунський фіолет */
   border: none;
-  color: white;
+  color: #F6C177; /* Світлий золотисто-бурштиновий */
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
 }
+
 .stats {
   text-align: center;
   margin-top: 1rem;
+  color: #A3C15B; /* М'який зелений листочок */
 }
+
 .news, .ratings {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
   padding: 2rem;
+  background: #2b2b2b; /* Темна магія */
 }
+
 .card {
-  background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: #5C5C5C; /* Темно-сірий камінь */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 1rem;
   width: 300px;
   border-radius: 8px;
+  color: #E5A24A; /* Бурштин */
 }
+
 .footer-nav {
+  padding-top: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  
+  
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .footer-nav div {
   margin-top: 1rem;
+  font-weight: bold; /* Жирний шрифт */
+  color: #E5A24A; /* Багряно янтарний */
+  text-shadow: 
+    1px 1px 0 #D4AF37, /* Золота окантовка */
+    -1px -1px 0 #D4AF37, 
+    1px -1px 0 #D4AF37, 
+    -1px 1px 0 #D4AF37, 
+    2px 2px 5px rgba(0, 0, 0, 0.5); /* Рельєфний ефект */
+  text-indent: -2px; /* Легке вдавлення */
+}
+
+.text-amber {
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: linear-gradient(45deg, #E5A24A, #F6C177, #D4AF37); /* Градієнт бурштину */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; /* Для підтримки в інших браузерах */
 }

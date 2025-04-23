@@ -1,67 +1,72 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>World of Aden</title>
+  <title>Мир Адена</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <canvas id="firefliesCanvas"></canvas>
+  <script src="fireflies.js"></script>
+
+
   <header>
     <nav>
       <ul>
-        <li><a href="#">Головна</a></li>
-        <li><a href="#">Про проект</a></li>
-        <li><a href="#">Скачати файли</a></li>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О проекте</a></li>
+        <li><a href="#">Скачать файлы</a></li>
         <li><a href="#">Статистика</a></li>
-        <li><a href="#">Пожертвування</a></li>
+        <li><a href="#">Пожертвования</a></li>
         <li><a href="#">Форум</a></li>
       </ul>
       <div>
-        <a href="#">RU</a> | <button>Увійти</button>
+        <a href="#">RU</a> | <button>Войти</button>
       </div>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>World of Aden</h1>
-    <p>It is a long established fact that a reader will be distracted...</p>
-    <button>Почати гру</button>
+    <img src="img/logo.png" alt="Логотип Genesis" style="max-width: 25%; height: auto;">
+    
+    <p></p>
+    <button>Начать игру</button>
     <div class="stats">
-      <p>В грі: 2958 | Серверів: 2</p>
+      <p>В игре: 2958 | Серверов: 2</p>
     </div>
   </section>
 
   <section class="news">
     <div class="card">
-      <h3>Нове оновлення Interlude x100</h3>
+      <h3>Новое обновление Interlude x100</h3>
       <p>25.11.2023 | 20:00</p>
-      <p>Опис оновлення, що змінено...</p>
+      <p>Описание обновления, что изменено...</p>
     </div>
     <div class="card">
-      <h3>Опис нового сервера x7</h3>
+      <h3>Описание нового сервера x7</h3>
       <p>25.11.2023 | 20:00</p>
-      <p>Новий сервер, нові можливості...</p>
+      <p>Новый сервер, новые возможности...</p>
     </div>
     <div class="card">
-      <h3>Зміни в системі петомців</h3>
+      <h3>Изменения в системе питомцев</h3>
       <p>25.11.2023 | 20:00</p>
-      <p>Нове оновлення покращує взаємодію з петомцями...</p>
+      <p>Новое обновление улучшает взаимодействие с питомцами...</p>
     </div>
   </section>
 
   <section class="ratings">
     <div class="card">
-      <h4>Рейтинг замків</h4>
+      <h4>Рейтинг замков</h4>
       <ul>
-        <li>Gludio Castle – Dark Angels</li>
-        <li>Dion Castle – RoyalBlood</li>
-        <li>Giran Castle – Extant</li>
+        <li>Замок Глудио – Dark Angels</li>
+        <li>Замок Дион – RoyalBlood</li>
+        <li>Замок Гиран – Extant</li>
       </ul>
     </div>
     <div class="card">
-      <h4>Рейтинг гравців</h4>
+      <h4>Рейтинг игроков</h4>
       <ul>
         <li>Воровушек – 13041</li>
         <li>Taho – 5546</li>
@@ -69,19 +74,18 @@
       </ul>
     </div>
     <div class="card">
-      <h4>Спільнота</h4>
-      <p>Приєднуйтесь до нас у VK!</p>
-      <button>Вступити у спільноту</button>
+      <h4>Сообщество</h4>
+      <p>Присоединяйтесь к нам в VK!</p>
+      <button>Вступить в сообщество</button>
     </div>
   </section>
 
   <footer>
     <div class="footer-nav">
+      <img src="img/GenesisPW copyright.png" alt="GenesisPW Copyright" style="max-width: 100%; height: auto;">
+      
       <div>
-        <p>© 2025 World of Aden</p>
-      </div>
-      <div>
-        <a href="#">Підтримка</a> | <a href="#">Форум</a> | <a href="#">Умови</a>
+        <a href="#">Поддержка</a> | <a href="#">Форум</a> | <a href="#">Условия</a>
       </div>
     </div>
   </footer>
